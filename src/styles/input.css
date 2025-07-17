@@ -1,0 +1,41 @@
+input {
+  max-width: 320px;
+  border-radius: 8px;
+  height: 26px;
+  padding: 4px 12px;
+  border-width: 1px;
+  
+}
+.form-group {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.form-input {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 8px;
+  background: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  box-shadow: 0 0 0 4px rgba(85, 87, 90, 0.2); /* Like shadcn */
+  border-color: oklch(1 0 0 / 0.1);
+}
+
+.form-label {
+  position: absolute;
+  top: -0.6rem;
+  left: 1rem;
+  background: white;
+  padding: 0 0.4rem;
+  font-size: 15px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.form-input:focus + .form-label {
+  color: #191a1a;
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import  Button  from './Button';
 
 export default {
@@ -6,5 +6,6 @@ export default {
   component: Button,
 };
 
-export const Primary = () => <Button >Primary Button</Button>;
-export const Secondary = () => <Button >Secondary Button</Button>;
+export const Primary = () => <Button variant="primary">Primary Button</Button>;
+export const Secondary = () => <Button variant={"secondary"}>Secondary Button</Button>;
+export const Danger = () => <Button variant={"danger"}>Secondary Button</Button>;
